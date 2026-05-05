@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.js"></script>
+    <title>Taste Menu</title>
+</head>
+<body>
+    <div class="main-container full-width-container">
+        <header class="modern-header">
+            <div class="logo">
+                <h1>مطعم قصر الشام </h1>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="AboutUs.html">AboutUs</a></li>
+                    <li><a href="Meals.html">Meals</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="table-wrapper">
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th>الرمز</th>
+                            <th>اسم الوجبة</th>
+                            <th>السعر(SYP)</th>
+                            <th>تفاصيل</th>
+                            <th>تأكيد الطلب</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LS101</td>
+                            <td>فروج مشوي </td>
+                            <td>50000</td>
+                            <td><input type="checkbox" class="detail-check" data-target="detail1"></td>
+                            <td><input type="radio" name="mealSelect[]" value="فروج مشوي" data-price="50000"></td>
+                        </tr>
+                        <tr id="detail1" class="hidden">
+                            <td colspan="5">
+                                <div class="details-container">
+                                    <ul class="details-list">
+                                        <li><h3>اسم الوجبة:</h3> فروج مشوي على الفحم</li>
+                                        <li><h3>المكونات:</h3> فروج كامل مشوي ومتبل بخلطة البهارات المدخنة، يقدم مع البطاطا، المخلل، الليمون، وكريم الثوم الإكسترا.</li>
+                                        <li><h3>الوصف:</h3> طعم المشوي الأصيل برائحة الفحم.</li>
+                                    </ul>
+                                    <div class="details-images">
+                                        <img class="meal-image" src="photos/1.jpg" alt="King's Feast">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LS102</td>
+                            <td>بيتزا بالخضار</td>
+                            <td>62000</td>
+                            <td><input type="checkbox" class="detail-check" data-target="detail2"></td>
+                            <td><input type="radio" name="mealSelect[]" value="بيتزا بالخضار" data-price="62000"></td>
+                        </tr>
+                        <tr id="detail2" class="hidden">
+                            <td colspan="5">
+                                <div class="details-container">
+                                    <ul class="details-list">
+                                        <li><h3>اسم الوجبة :</h3> بيتزا بالخضار </li>
+                                        <li><h3> المكونات:</h3> عجينة رقيقة وهشة، مغطاة بجبنة الموزاريلا الغنية، فلفل أخضر، زيتون أسود، وفطر فريش مع صوص الطماطم</li>
+                                        <li><h3> الوصف:</h3> طعم أصيل في كل قطعة</li>
+                                    </ul>
+                                    <div class="details-images">
+                                        <img class="meal-image" src="photos/2.jpg" alt="Ocean Atlas">
+                                        </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LS201</td>
+                            <td>منسف مندي</td>
+                            <td>55000</td>
+                            <td><input type="checkbox" class="detail-check" data-target="detail3"></td>
+                            <td><input type="radio" name="mealSelect[]" value="منسف مندي" data-price="55000"></td>
+                        </tr>
+                        <tr id="detail3" class="hidden">
+                            <td colspan="5">
+                                <div class="details-container">
+                                    <ul class="details-list">
+                                        <li><h3>اسم الوجبة :</h3> منسف مندي بلدي </li>
+                                        <li><h3> المكونات :</h3> رز منسف أصيل، قطع لحم غنم مطبوخة بالجميد الكركي، مزينة بالمكسرات المحمصة، تقدم مع صوص الجميد الجانبي.</li>
+                                        <li><h3> الوصف :</h3> طبق الولائم الفاخر واللذيذ.</li>
+                                    </ul>
+                                    <div class="details-images">
+                                        <img class="meal-image" src="photos/3.jpg" alt="Wilderness Magic">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LS202</td>
+                            <td> وجبة كريسبي</td>
+                            <td>34000</td>
+                            <td><input type="checkbox" class="detail-check" data-target="detail4"></td>
+                            <td><input type="radio" name="mealSelect[]" value="وجبة كريسبي" data-price="34000"></td>
+                        </tr>
+                        <tr id="detail4" class="hidden">
+                            <td colspan="5">
+                                <div class="details-container">
+                                    <ul class="details-list">
+                                        <li><h3>اسم الوجبة :</h3>​ وجبة كريسبي</li>
+                                        <li><h3>المكونات:</h3> أصابع دجاج كريسبي مقرمشة (Zinger style)، تقدم مع بطاطا مبهرة بالكركم، سلطة كول سلو، وصوص الثومية.</li>
+                                        <li><h3>الوصف :</h3> القرمشة المثالية في كل قطعة</li>
+                                    </ul>
+                                    <div class="details-images">
+                                        <img class="meal-image" src="photos/4.jpg" alt="Forest Whisper">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LS301</td>
+                            <td>وجبة شاورما</td>
+                            <td>24000</td>
+                            <td><input type="checkbox" class="detail-check" data-target="detail5"></td>
+                            <td><input type="radio" name="mealSelect[]" value="وجبة شاورما" data-price="24000"></td>
+                        </tr>
+                        <tr id="detail5" class="hidden">
+                            <td colspan="5">
+                                <div class="details-container">
+                                    <ul class="details-list">
+                                        <li><h3>اسم الوجبة:</h3> وجبة شاورما عربي </li>
+                                        <li><h3> المكونات:</h3> قطع شاورما دجاج بخبز الصاج، بطاطا مقلية مقرمشة، مخلل مشكل، وكريم ثوم أصلي.</li>
+                                        <li><h3> الوصف:</h3> الوجبة الأكثر شعبية بلمسة مطعمنا الخاصة</li>
+                                        </ul>
+                                    <div class="details-images">
+                                        <img class="meal-image" src="photos/5.jpg" alt="Moon's Kiss">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LS302</td>
+                            <td>وجبة اسكالوب </td>
+                            <td>28000</td>
+                            <td><input type="checkbox" class="detail-check" data-target="detail6"></td>
+                            <td><input type="radio" name="mealSelect[]" value="وجبة اسكالوب" data-price="28000"></td>
+                        </tr>
+                        <tr id="detail6" class="hidden">
+                            <td colspan="5">
+                                <div class="details-container">
+                                    <ul class="details-list">
+                                        <li><h3>اسم الوجبة:</h3> سكالوب دجاج</li>
+                                        <li><h3>المكونات</h3> صدور دجاج مقلية ومقرمشة، تقدم مع البطاطا المقلية وشرائح الليمون المنعشة وسلطة البقدونس.</li>
+                                        <li><h3>الوصف:</h3> وجبة خفيفة ومقرمشة لعشاق الدجاج المقلي.</li>
+                                    </ul>
+                                    <div class="details-images">
+                                        <img class="meal-image" src="photos/6.jpg" alt="Eastern Gold">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="continue-area">
+                <button id="continueButton" class="button">متابعة</button>
+            </div>
+
+            <div id="formContainer" class="hidden">
+                <form id="orderForm">
+                    <div class="form-row">
+                        <label for="fullName">الاسم الكامل:</label>
+                        <input type="text" id="fullName" name="fullName">
+                    </div>
+                    <div class="form-row">
+                        <label for="orderDate">التاريخ:</label>
+                        <input type="date" id="orderDate" name="orderDate">
+                    </div>
+                    <div class="form-row">
+                        <label for="mobile">رقم للتواصل:</label>
+                        <input type="tel" id="mobile" name="mobile">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">البريد الكتروني للتواصل:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="bankAccount">رقم الوطني :</label>
+                        <input type="text" id="bankAccount" name="bankAccount" required pattern="^\d{11}$" maxlength="11">
+                    </div>
+                    <div class="action-area">
+                        <button type="submit" class="button">تأكيد</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="myFunctions.js"></script>
+</body>
+</html>
